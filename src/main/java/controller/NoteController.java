@@ -8,6 +8,7 @@ import repository.NoteRepository;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @RestController // this is a combination of Spring’s @Controller and @ResponseBody annotations
 @RequestMapping("/api") //declares that the url for all the apis in this controller will start with /api
@@ -30,6 +31,11 @@ public class NoteController {
     }
 
     // Get a Single Note
+    @RequestMapping(value = "/notes/{id}")
+    public Optional<Note> getNoteyId(@PathVariable("id") Long noteId ){
+        return noteRepository.findById(noteId);
+    }
+
 
     // Update a Note
 
