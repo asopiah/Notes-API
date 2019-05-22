@@ -1,1 +1,5 @@
+repository\NoteRepository.class
+model\Note.class
 NotesAPIApplication.class
+exception\ResourceNotFoundException.class
+controller\NoteController.class
