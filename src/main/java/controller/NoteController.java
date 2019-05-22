@@ -1,6 +1,7 @@
 package controller;
 
 
+import exception.ResourceNotFoundException;
 import model.Note;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -31,9 +32,9 @@ public class NoteController {
     }
 
     // Get a Single Note
-    @RequestMapping(value = "/notes/{id}")
-    public Optional<Note> getNoteyId(@PathVariable("id") Long noteId ){
-        return noteRepository.findById(noteId);
+    @RequestMapping(value = "/notes/{id}", method =RequestMethod.GET)
+    public Note getNoteById(@PathVariable("id") Long noteId ){
+        return noteRepository.findById(noteId).orElseThrow(()-> new ResourceNotFoundException("Note","id",noteId));
     }
 
 
