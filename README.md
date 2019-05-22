@@ -37,8 +37,12 @@ PUT /api/notes/{noteId}
 
 DELETE /api/notes/{noteId}
 ```
+## Testing the APIs
 You can test them using postman or any other rest client
 
+Me I am using RestLet Client chrome extension
+
+![alt text](https://github.com/asopiah/Images/blob/master/notes_api_testing.gif)
 
 ## Issue
 Please open an issue if you encounter an error while running or using this code
