@@ -39,6 +39,18 @@ public class NoteController {
 
 
     // Update a Note
+    @RequestMapping(value = "/notes/{id}", method = RequestMethod.PUT)
+    public Note updateNote(@PathVariable(value = "id") Long noteId,
+                           @Valid @RequestBody Note noteDetails) {
 
+        Note note = noteRepository.findById(noteId)
+                .orElseThrow(() -> new ResourceNotFoundException("Note", "id", noteId));
+
+        note.setTitle(noteDetails.getTitle());
+        note.setContent(noteDetails.getContent());
+
+        Note updatedNote = noteRepository.save(note);
+        return updatedNote;
+    }
     // Delete a Note
 }
