@@ -3,11 +3,10 @@ package controller;
 
 import model.Note;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import repository.NoteRepository;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController // this is a combination of Spring’s @Controller and @ResponseBody annotations
@@ -23,7 +22,12 @@ public class NoteController {
     public List<Note> getAllNotes(){
         return noteRepository.findAll();
     }
+
     // Create a new Note
+    @RequestMapping(value = "/notes", method = RequestMethod.POST)
+    public Note createNotes(@Valid  @RequestBody Note note){
+        return noteRepository.save(note);
+    }
 
     // Get a Single Note
 
