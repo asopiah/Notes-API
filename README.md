@@ -44,18 +44,19 @@ Me I am using RestLet Client chrome extension
 
 ![alt text](https://github.com/asopiah/Images/blob/master/notes_api_testing.gif)
 
-## I have deployed this rest API on Heroku
-Use below endpoints to access the CRUD operations.
+## I have deployed this rest API on [Heroku](https://www.heroku.com/)
+Use below endpoints to test CRUD operations live without running the application localy. You only require [Postman](https://www.getpostman.com/
+) or any other rest client.
 
-GET [a link](https://sopia-notes-api.herokuapp.com/api/notes) --Get all the notes
+GET https://sopia-notes-api.herokuapp.com/api/notes --Get all the notes
 
-POST [a link](https://sopia-notes-api.herokuapp.com/api/notes) -- Create a new note
+POST https://sopia-notes-api.herokuapp.com/api/notes -- Create a new note
 
-GET [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Get a specefic note 
+GET https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Get a specefic note 
 
-PUT [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Update a given note
+PUT https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Update a given note
 
-DELETE [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Delete a given note
+DELETE https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Delete a given note
 
 
 ## Issue
