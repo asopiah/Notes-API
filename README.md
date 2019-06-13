@@ -47,15 +47,15 @@ Me I am using RestLet Client chrome extension
 ## I have deployed this rest API on Heroku
 Use below endpoints to access the CRUD operations.
 ```bash
-GET https://sopia-notes-api.herokuapp.com/api/notes --Get all the notes
+GET [a link](https://sopia-notes-api.herokuapp.com/api/notes) --Get all the notes
 
-POST https://sopia-notes-api.herokuapp.com/api/notes -- Create a new note
+POST [a link](https://sopia-notes-api.herokuapp.com/api/notes) -- Create a new note
 
-GET https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Get a specefic note 
+GET [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Get a specefic note 
 
-PUT https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Update a given note
+PUT [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Update a given note
 
-DELETE https://sopia-notes-api.herokuapp.com/api/notes/{noteId} -- Delete a given note
+DELETE [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Delete a given note
 ```
 
 ## Issue
