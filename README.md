@@ -46,7 +46,7 @@ Me I am using RestLet Client chrome extension
 
 ## I have deployed this rest API on Heroku
 Use below endpoints to access the CRUD operations.
-```bash
+
 GET [a link](https://sopia-notes-api.herokuapp.com/api/notes) --Get all the notes
 
 POST [a link](https://sopia-notes-api.herokuapp.com/api/notes) -- Create a new note
@@ -56,7 +56,7 @@ GET [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Get a 
 PUT [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Update a given note
 
 DELETE [a link](https://sopia-notes-api.herokuapp.com/api/notes/){noteId} -- Delete a given note
-```
+
 
 ## Issue
 Please open an issue if you encounter an error while running or using this code
